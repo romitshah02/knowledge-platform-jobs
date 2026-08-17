@@ -32,6 +32,7 @@ object ExtractableMimeTypeHelper {
       case "application/vnd.ekstep.html-archive" => config.contentFolder + File.separator + "html" + File.separator + obj.identifier + "-" + suffix
       case "application/vnd.ekstep.h5p-archive" => config.contentFolder + File.separator + "h5p" + File.separator + obj.identifier + "-" + suffix
       case "application/vnd.ekstep.scorm-archive" => config.contentFolder + File.separator + "scorm" + File.separator + obj.identifier + "-" + suffix
+      case "application/vnd.ekstep.qti-archive" => config.contentFolder + File.separator + "qti" + File.separator + obj.identifier + "-" + suffix
       case _ => ""
     }
   }

@@ -201,7 +201,7 @@ trait ContentPublisher extends ObjectReader with ObjectValidator with ObjectEnri
       obj.mimeType match {
         case MimeType.Collection | MimeType.Plugin_Archive | MimeType.Android_Package | MimeType.ASSETS =>
           None
-        case MimeType.ECML_Archive | MimeType.HTML_Archive | MimeType.H5P_Archive | MimeType.SCORM_Archive =>
+        case MimeType.ECML_Archive | MimeType.HTML_Archive | MimeType.H5P_Archive | MimeType.SCORM_Archive | MimeType.QTI_Archive =>
           val latestFolderS3Url = ExtractableMimeTypeHelper.getCloudStoreURL(obj, cloudStorageUtil, config)
           val relativeLatestFolder = if(config.isrRelativePathEnabled) {
             val paths = config.config.getStringList("cloudstorage.write_base_path").asScala.toArray

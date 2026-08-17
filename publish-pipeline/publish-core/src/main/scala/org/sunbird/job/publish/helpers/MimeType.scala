@@ -7,6 +7,7 @@ object MimeType extends Enumeration {
   val MSWORD: String = Value("application/msword").toString
   val H5P_Archive: String = Value("application/vnd.ekstep.h5p-archive").toString
   val SCORM_Archive: String = Value("application/vnd.ekstep.scorm-archive").toString
+  val QTI_Archive: String = Value("application/vnd.ekstep.qti-archive").toString
 
   val X_Youtube: String = Value("video/x-youtube").toString
   val Youtube: String = Value("video/youtube").toString
